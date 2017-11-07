@@ -1,0 +1,13 @@
+
+
+
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :detail %>
+  <%= f.text_field :detail %>
+ <button type="button" class="btn btn-outline-primary"> <%= f.submit %></button>
+<% end %>
+
+

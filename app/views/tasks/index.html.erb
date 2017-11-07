@@ -1,0 +1,15 @@
+<% @tasks.each do |task| %>
+  <h4>Tache : <%= task.name %></h4>
+  <p>Détail : <%= task.detail %></p>
+  <button type="button" class="btn btn-secondary"><%= link_to "Edit", edit_task_path(task) %></button>
+
+  <button type="button" class="btn btn-warning"><%= link_to "Delete", task_path(task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+<% end %></button>
+<hr/>
+<p><button type="button" class="btn btn-success"><%= link_to "Add", new_task_path %></button></p>
+
+
+
+

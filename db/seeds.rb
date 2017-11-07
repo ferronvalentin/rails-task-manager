@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+tasks_attributes = [
+  {name: 'Courses', detail: 'Acheter du chocolat'},
+  {name: 'Sport', detail: 'Faire du sport'}
+]
+
+tasks_attributes.each {|task_attributes| Task.create! task_attributes}
